@@ -12,7 +12,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class BankAccount extends Model
 {
-    use HasFactory, HasUuid;
+    use HasFactory;
+    // use HasUuid;
 
     /**
      * @var array<int, string>

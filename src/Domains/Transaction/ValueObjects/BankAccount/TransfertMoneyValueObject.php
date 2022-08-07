@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Domains\Transaction\ValueObjects\BankAccount;
 
-final class BankAccountValueObject
+final class TransfertMoneyValueObject
 {
     public function __construct(
         private readonly int $amount

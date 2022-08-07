@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Transaction\BankAccount\CreateBankAccountController;
 use App\Http\Controllers\Transaction\BankAccount\MoneyTransferredController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,5 +20,6 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', MoneyTransferredController::class)->middleware(['auth'])->name('dashboard');
+Route::get('/createAccount', CreateBankAccountController::class)->middleware(['auth'])->name('createAccount');
 
 require __DIR__.'/auth.php';
